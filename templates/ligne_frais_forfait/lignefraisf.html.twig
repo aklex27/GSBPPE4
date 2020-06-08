@@ -1,0 +1,88 @@
+{% extends "visiteur/menuVisiteur.html.twig" %}
+{% block title %}
+FICHE FRAIS
+{% endblock %}
+{% block body %}
+<center>
+<div class="well">
+{{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
+{# Les erreurs générales du formulaire. #}
+{{ form_errors(form) }}
+<h3><center>Saisir une fichefrais</center></h3>
+<div class="well">
+{{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
+{# Les erreurs générales du formulaire. #}
+{{ form_errors(form) }}
+
+<div class="form-group">
+{# Génération du label. #}
+{{ form_label(form.mois, "mois", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+{# Affichage des erreurs pour ce champ précis. #}
+{{ form_errors(form.mois) }}
+<div class="col-sm-4">
+{# Génération de l'input. #}
+{{ form_widget(form.mois, {'attr': {'class': 'form-control'}}) }}
+</div>
+</div>
+
+<div class="form-group">
+{# Génération du label. #}
+{{ form_label(form.quantite, "nbJustificatifs", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+{# Affichage des erreurs pour ce champ précis. #}
+{{ form_errors(form.quantite) }}
+<div class="col-sm-4">
+{# Génération de l'input. #}
+{{ form_widget(form.quantite, {'attr': {'class': 'form-control'}}) }}
+</div>
+</div>
+
+<div class="form-group">
+{# Génération du label. #}
+{{ form_label(form.visiteur, "montantValide", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+{# Affichage des erreurs pour ce champ précis. #}
+{{ form_errors(form.visiteur) }}
+<div class="col-sm-4">
+{# Génération de l'input. #}
+{{ form_widget(form.visiteur, {'attr': {'class': 'form-control'}}) }}
+</div>
+</div>
+
+<div class="form-group">
+{# Génération du label. #}
+{{ form_label(form.fraisforfait, "dateModif", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+{# Affichage des erreurs pour ce champ précis. #}
+{{ form_errors(form.fraisforfait) }}
+<div class="col-sm-4">
+{# Génération de l'input. #}
+{{ form_widget(form.fraisforfait, {'attr': {'class': 'form-control'}}) }}
+</div>
+</div>
+
+
+
+
+{# Pour le bouton, pas de label ni d'erreur, on affiche juste le widget #}
+<div class="row">
+<div class="container">
+<label class="col-md-4 control-label"></label>
+<div class="col-md-4">
+{{ form_widget(form.Ajouter, {'attr': {'class': 'btn btn-success'}}) }}
+{{ form_widget(form.annuler, {'attr': {'class': 'btn btn-success'}}) }}
+</div>
+</div>
+</div>
+</div>
+{% if app.session.flashBag.has('success') %}
+<div class="alert alert-success">
+{% for msg in app.session.flashBag.get('success') %}
+{{ msg }}
+{% endfor %}
+</div>
+{% endif %}
+
+{{ form_rest(form) }}
+{# Fermeture de la balise <form> du formulaire HTML #}
+{{ form_end(form) }}
+</div>{# empty Twig template #}
+</center>
+{% endblock %}

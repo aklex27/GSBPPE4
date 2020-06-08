@@ -1,0 +1,78 @@
+{% extends "comptable/ménu.html.twig" %}
+{% block body %}
+    
+<style type="text/css">
+        
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+</style>
+
+<div>   
+<div name="droite" style="margin:auto; width:50%;">
+        <div name="haut" style="margin: 2 2 2 2 ;height:20%;float:left;"><h1>Validation des Frais</h1></div>	
+        <div name="bas" style="margin : 10 2 2 2;clear:left;background-color:EE8844;color:white;height:88%;">
+            
+    <form name="formValidFrais" method="post" action="enregValidFrais.php">    
+   
+        <div style="clear:left;"><h2>Frais au forfait </h2></div>
+            <table style="color:white;" border="1">
+                {% for unlff in app.session.get('lingeff') %}
+                <tr><th>Repas midi</th><th>Nuitée </th><th>Etape</th><th>Km </th><th>Situation</th></tr>
+                <tr><td><input type="text" size="3" name="repas"/></td>
+                    <td><input type="text" size="3" name="nuitee"/></td> 
+                    <td><input type="text" size="3" name="etape"/></td>
+                    <td><input type="text" size="3" name="km" /></td>
+                    <td> 
+                        <select size="3" name="situ">
+                            <option value="E">Enregistré</option>
+                            <option value="V">Validé</option>
+                            <option value="R">Remboursé</option>
+                        </select></td>
+                </tr>
+                {% endfor %}
+            </table>
+        
+        <div style="clear:left;"><h2>Hors Forfait</h2></div>
+            <table style="color:white;" border="1">
+                <tr><th>Date</th><th>Libellé </th><th>Montant</th><th>Situation</th></tr>
+                <tr><td><input type="text" size="12" name="hfDate1"/></td>
+                    <td><input type="text" size="30" name="hfLib1"/></td> 
+                    <td> <input type="text" size="10" name="hfMont1"/></td>
+                    <td> 
+                        <select size="3" name="hfSitu1">
+                            <option value="E">Enregistré</option>
+                            <option value="V">Validé</option>
+                            <option value="R">Remboursé</option>
+                        </select></td>
+                </tr>
+            </table>
+       
+        <p>
+            <div>Nb Justificatifs</div><input type="text" class="zone" size="4" name="hcMontant"/>		
+        </p>
+        
+</div>
+            <p>
+                <div>
+                    <a href="#" ><button type="button" class="btn btn-warning">Valider</button> </a>
+                    <a href="#"><button type="button" class="btn btn-warning">Annuler</button> </a>
+                </div>
+            </p>
+    </form>
+    
+{% endblock %}

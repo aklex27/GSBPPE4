@@ -1,0 +1,17 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+        <table border='1'>
+            {% for val in resultat %}
+                <tr>
+                    <td>{{ val.prenom }}</td>
+                    <td>{{ val.nom }}</td>
+                    <td class="table-primary">{{ val.adresse }}</td>
+                    <td>{{ val.ville }}</td>
+                    <td>{{ val.cp }}</td>
+                    <td>{{ val.dateEmbauche|date('d/m/Y') }}</td>
+                </tr>
+            {% endfor %}
+
+        </table>
+            {% endblock %}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/var/www/html/GSBVisiteur/templates/fraisforfait/index.html.twig</file>
+            <file>file:/var/www/html/GSBVisiteur/templates/ligne_frais_forfait/FraisForfait.html.twig</file>
+            <file>file:/var/www/html/GSBVisiteur/templates/fichefrais/index.html.twig</file>
+            <file>file:/var/www/html/GSBVisiteur/src/Repository/VisiteurRepository.php</file>
+            <file>file:/var/www/html/GSBVisiteur/src/Controller/FraisforfaitController.php</file>
+            <file>file:/var/www/html/GSBVisiteur/templates/fichefrais/saisir_fichefrais.html.twig</file>
+            <file>file:/var/www/html/GSBVisiteur/templates/base.html.twig</file>
+            <file>file:/var/www/html/GSBVisiteur/src/Form/EtatType.php</file>
+            <file>file:/var/www/html/GSBVisiteur/templates/visiteur/navbar.html.twig</file>
+            <file>file:/var/www/html/GSBVisiteur/src/Controller/VisiteurController.php</file>
+            <file>file:/var/www/html/GSBVisiteur/src/Repository/FicheFraisRepository.php</file>
+            <file>file:/var/www/html/GSBVisiteur/templates/fichefrais/add.html.twig</file>
+            <file>file:/var/www/html/GSBVisiteur/templates/visiteur/newpage.html.twig</file>
+            <file>file:/var/www/html/GSBVisiteur/src/Repository/LigneFraisHorsForfaitRepository.php</file>
+            <file>file:/var/www/html/GSBVisiteur/templates/visiteur/view.html.twig</file>
+            <file>file:/var/www/html/GSBVisiteur/src/Entity/Etat.php</file>
+            <file>file:/var/www/html/GSBVisiteur/src/Entity/Visiteur.php</file>
+            <file>file:/var/www/html/GSBVisiteur/templates/visiteur/formulaire.html.twig</file>
+            <file>file:/var/www/html/GSBVisiteur/templates/visiteur/saisirFF.html.twig</file>
+            <file>file:/var/www/html/GSBVisiteur/src/Form/VisiteurType.php</file>
+            <file>file:/var/www/html/GSBVisiteur/templates/visiteur/connexion.html.twig</file>
+            <file>file:/var/www/html/GSBVisiteur/templates/fichefrais/consultFF.html.twig</file>
+            <file>file:/var/www/html/GSBVisiteur/src/Form/FicheFraisType.php</file>
+            <file>file:/var/www/html/GSBVisiteur/templates/visiteur/menuVisiteur.html.twig</file>
+            <file>file:/var/www/html/GSBVisiteur/src/Entity/FraisForfait.php</file>
+            <file>file:/var/www/html/GSBVisiteur/src/Controller/ComptableController.php</file>
+            <file>file:/var/www/html/GSBVisiteur/src/Entity/FicheFrais.php</file>
+            <file>file:/var/www/html/GSBVisiteur/src/Controller/FichefraisController.php</file>
+            <file>file:/var/www/html/GSBVisiteur/templates/visiteur/index.html.twig</file>
+            <file>file:/var/www/html/GSBVisiteur/templates/fraisforfait/FFdeVisiteur.html.twig</file>
+            <file>file:/var/www/html/GSBVisiteur/src/Repository/EtatRepository.php</file>
+        </group>
+    </open-files>
+</project-private>

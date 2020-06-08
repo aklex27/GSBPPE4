@@ -1,0 +1,52 @@
+{% extends "base.html.twig" %}
+{% block title %}
+Formulaire Connexion Visiteur
+{% endblock %}
+{% block body %}
+
+    <div style="color:blue"> <h4><br/>CAS GSB</h4></div>
+ 
+     <div class="nav"> 
+         
+            <div>
+            
+                <p style="color:green"> Vous êtes bien connecté en tant que : "Visiteur"</p>
+            </div>
+            <div>
+                  <div style="text-align:center">
+                     
+                      <h4><br/>Bonjour,</h4>{{app.session.get('nom')}}   {{app.session.get('prenom')}}
+                  </div>
+                    <nav style="text-align:center" class="navbar navbar-expand-lg navbar-light bg-light">
+                 
+                   
+                 
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                      
+                      <li class="nav-item active">
+                        <a class="nav-link" href="{{ path('_fichefrais') }}">Saisir Fiche des Frais</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{{ path('consultforfait') }}">Etat fiche des frais</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link" href="/saisirFFnoforfait"   >
+                          Saisir les fiches hors forfaits
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Action</a>
+                         
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                
+                  <div style="float: right" type="button" class="btn btn-outline-danger" >  
+                      <a href="{{ path('sioslam_connexion') }}" >Déconnexion</a>
+                  </div>
+                </nav>
+            </div>
+     </div>   
+{% endblock %}
+{# empty Twig template #}
